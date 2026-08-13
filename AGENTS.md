@@ -33,3 +33,17 @@ Both must exit zero before a PR is considered gate-green. The runner is **pnpm**
 - Review rules: `CODE_REVIEW.md`
 - Protected surfaces: `BACKWARD_COMPATIBILITY.md`
 - Pipeline configuration: `.ai/agentic.config.json`, tracker descriptor `.ai/trackers/github.md`, browser descriptor `.ai/browsers/agent-browser.md`
+
+## Agent skills
+
+### Issue tracker
+
+Issues live as GitHub issues in `gjaworski86/om-pipeline-sandbox`, driven by the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+The five canonical triage roles, each label string equal to its role name. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: `CONTEXT.md` plus `docs/adr/` at the repo root. See `docs/agents/domain.md`.
