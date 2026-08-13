@@ -1,6 +1,9 @@
-import { HEADLINE } from "./greeting";
+import { useState } from "react";
+import { CLICK_BUTTON_LABEL, clickCount, HEADLINE } from "./greeting";
 
 export function App() {
+  const [clicks, setClicks] = useState(0);
+
   return (
     <main
       style={{
@@ -11,6 +14,13 @@ export function App() {
       }}
     >
       <h1 data-testid="headline">{HEADLINE}</h1>
+      <button
+        data-testid="click-button"
+        onClick={() => setClicks((previous) => previous + 1)}
+      >
+        {CLICK_BUTTON_LABEL}
+      </button>
+      <p data-testid="click-count">{clickCount(clicks)}</p>
     </main>
   );
 }
