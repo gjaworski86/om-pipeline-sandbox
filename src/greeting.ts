@@ -13,5 +13,5 @@ export function greeting(name: string): string {
  * inflection rule arrives in a follow-up ticket.
  */
 export function clickCount(count: number): string {
-  return `${count} kliknięć`;
+  return `${count} kliknięcia`;
 }
